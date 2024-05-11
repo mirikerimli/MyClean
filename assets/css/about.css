@@ -1,0 +1,94 @@
+.about_context_first {
+  margin-bottom: 10rem;
+  height: 46rem;
+  position: relative;
+}
+
+.about_context_first .container {
+  display: flex;
+  align-items: center;
+}
+
+.about_context_first .container .about_context_main {
+  margin-left: 10rem;
+  max-width: 47rem;
+}
+
+.about_context_main p {
+  margin-bottom: 1rem;
+}
+
+.about_context_first .container .about_context_img {
+  max-width: 60rem;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.about_context_second {
+  margin-bottom: 16rem;
+  height: 46rem;
+  position: relative;
+}
+
+.about_context_second .container {
+  display: flex;
+  align-items: center;
+}
+
+.about_context_second .container .about_context_img {
+  max-width: 60rem;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.about_context_second .container .about_context_main {
+  margin-left: 60rem;
+  max-width: 47rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .about_context_first .container .about_context_img,
+  .about_context_second .container .about_context_img {
+    position: inherit;
+  }
+  .about_context_first .container .about_context_main,
+  .about_context_second .container .about_context_main {
+    margin-left: 0;
+  }
+  .about_context_first .container,
+  .about_context_second .container {
+    justify-content: space-between;
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about_context_first .container .about_context_img,
+  .about_context_second .container .about_context_img {
+    min-width: 32rem;
+  }
+  .about_context_first .container,
+  .about_context_second .container {
+    flex-direction: column;
+  }
+  .about_context_first,
+  .about_context_second {
+    margin-bottom: 30rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about_context_first,
+  .about_context_second {
+    margin-bottom: 20rem;
+  }
+}
+
+@media screen and (max-width: 344px) {
+  .about_context_first,
+  .about_context_second {
+    margin-bottom: 23rem;
+  }
+}

@@ -1,0 +1,54 @@
+.cars {
+  margin-bottom: 16rem;
+}
+
+.products .container h2 {
+  margin-bottom: 0.4rem;
+}
+
+.products_block {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 6rem;
+}
+
+.products_item img {
+  max-height: 25rem;
+  margin-bottom: 3rem;
+}
+
+.products_item_text {
+  max-width: 27rem;
+}
+
+.products_item_text h6 {
+  font-size: clamp(2.2rem, 2.099vw + 1.478rem, 4.5rem);
+  line-height: clamp(2.2rem, 2.099vw + 1.478rem, 4.5rem);
+  margin-bottom: 1.5rem;
+}
+
+.products_item_text .price {
+  font-size: clamp(2rem, 0.365vw + 1.874rem, 2.4rem);
+  line-height: clamp(2rem, 0.365vw + 1.874rem, 2.4rem);
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+  .cars {
+    margin-bottom: 12rem;
+  }
+  .products_block {
+    overflow-x: scroll;
+  }
+  .products_item img {
+    min-width: 28rem;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 344px) {
+  .cars {
+    margin-bottom: 4rem;
+  }
+}

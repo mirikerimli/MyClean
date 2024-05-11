@@ -1,0 +1,124 @@
+.menu {
+  margin-bottom: 6rem;
+}
+
+.services_inside_context {
+  position: relative;
+}
+
+.services_inside_item {
+  height: 40rem;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 13rem;
+}
+
+.services_inside_item .services_inside_item_img {
+  position: absolute;
+  left: 0;
+  max-width: 64rem;
+}
+
+.services_inside_item .services_inside_item_text {
+  max-width: 47rem;
+  margin-left: 60rem;
+}
+
+.services_inside_item_text h3 {
+  font-size: clamp(2.2rem, 2.099vw + 1.478rem, 4.5rem);
+  line-height: clamp(2.6rem, 2.099vw + 1.478rem, 4.5rem);
+  color: var(--color-yellow);
+  margin-bottom: 2rem;
+}
+
+.services_inside_item_text p {
+  margin-bottom: 2.5rem;
+}
+
+.services_inside_btn {
+  display: inline-block;
+  margin-top: 7.5rem;
+}
+
+.services_inside_btn span {
+  font-size: clamp(1.8rem, 0.875vw + 1.52rem, 3.2rem);
+  font-weight: 500;
+  margin-right: 4rem;
+  color: #fff;
+}
+
+.services_inside_btn i {
+  font-size: clamp(1.8rem, 0.875vw + 1.52rem, 2.5rem);
+  color: #fff;
+  transform: rotate(45deg);
+}
+
+.services_inside_item_second {
+  height: 40rem;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16rem;
+}
+
+.services_inside_item_second .services_inside_item_img {
+  position: absolute;
+  right: 0;
+  max-width: 64rem;
+}
+
+.services_inside_item_second .services_inside_item_text {
+  max-width: 47rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .services_inside_item .services_inside_item_img,
+  .services_inside_item_second .services_inside_item_img {
+    position: inherit;
+  }
+  .services_inside_item .services_inside_item_text {
+    margin-left: 0;
+  }
+  .services_inside_item,
+  .services_inside_item_second {
+    justify-content: space-between;
+    gap: 4rem;
+  }
+  .second_paragraph {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .services_inside_item .services_inside_item_img,
+  .services_inside_item_second .services_inside_item_img {
+    min-width: 28rem;
+  }
+  .services_inside_item,
+  .services_inside_item_second {
+    flex-direction: column;
+    margin-bottom: 40rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services_inside_item,
+  .services_inside_item_second {
+    margin-bottom: 20rem;
+  }
+}
+
+@media screen and (max-width: 344px) {
+  .menu {
+    margin-bottom: 2rem;
+  }
+  .menu_context span {
+    display: none;
+  }
+  .services_inside_item,
+  .services_inside_item_second {
+    margin-bottom: 16rem;
+  }
+  .services_inside_btn {
+    margin-top: 0;
+  }
+}
